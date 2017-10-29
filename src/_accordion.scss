@@ -1,5 +1,3 @@
-@import 'node-modules/elr-scss-functions/main';
-
 @mixin elr-accordion($config: ()) {
     $config: extend((
         label-color: #333,
