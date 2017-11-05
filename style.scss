@@ -1,0 +1,5 @@
+@import 'src/main';
+
+.accordion {
+    @include elr-accordion;
+}
