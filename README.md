@@ -6,10 +6,6 @@
 
 a library of sass mixins
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WQoMZ89hEDJBYaUN6DNr2Xrq/Beth3346/elr-scss-accordion'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WQoMZ89hEDJBYaUN6DNr2Xrq/Beth3346/elr-scss-accordion.svg' />
-</a>
-
 ## Installation
 
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
