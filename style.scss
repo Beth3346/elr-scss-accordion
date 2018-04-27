@@ -1,5 +1,20 @@
 @import 'src/main';
 
 .accordion {
-    @include elr-accordion;
+  @include elr-accordion;
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+.accordion-no-border {
+  @include elr-accordion($config: (border-color: none));
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+  font-family: 'Lato', sans-serif;
 }

@@ -1,75 +1,110 @@
 @mixin elr-accordion($config: ()) {
-    $config: extend((
-        label-color: #333,
-        border-radius: 0,
-        color: #fff,
-        border-color: none,
-        icon-color: #00f
-    ), $config);
+  $config:extend(
+    (
+      label-color: #333,
+      border-radius: 3px,
+      color: #fff,
+      border-color: #333,
+      icon-color: rgb(0, 140, 255)
+    ),
+    $config
+  );
 
-    $label-color: map-get($config, label-color);
-    $border-radius: map-get($config, border-radius);
-    $color: map-get($config, color);
-    $border-color: map-get($config, border-color);
-    $icon-color: map-get($config, icon-color);
+  $label-color: map-get($config, label-color);
+  $border-radius: map-get($config, border-radius);
+  $color: map-get($config, color);
+  $border-color: map-get($config, border-color);
+  $icon-color: map-get($config, icon-color);
 
-    margin-top: to-rems(10px);
-    margin-bottom: to-rems(10px);
+  margin-top: 10px;
+  margin-bottom: 10px;
 
-    .elr-accordion-label,
-    .elr-accordion-content {
-        background-color: $color;
+  .elr-accordion-label,
+  .elr-accordion-content {
+    background-color: $color;
 
-        @if ($border-color != none) {
-            border: 1px solid $border-color;
-        }
-
-        @if ($border-radius != 0) {
-            border-radius: $border-radius;
-        }
+    @if ($border-color != none) {
+      border: 1px solid $border-color;
     }
 
-    .elr-accordion-label {
-        margin: 0 0 to-rems(5px);
-        padding: to-rems(5px) to-rems(10px);
-        font-size: to-rems(18px);
-        color: $label-color;
-        font-weight: normal;
-        position: relative;
-        padding-left: to-rems(30px);
+    @if ($border-radius != 0) {
+      border-radius: $border-radius;
+    }
+  }
 
-        &:hover {
-            cursor: pointer;
-        }
+  .elr-accordion-label {
+    font-size: 18px;
+    color: $label-color;
+    font-weight: 700;
+    position: relative;
 
-        &.active {
-            .elr-accordion-icon {
-                transform: rotate(0deg);
-            }
-        }
+    @if ($border-color == none) {
+      margin: 0;
+      padding: 5px 0;
+      padding-left: 15px;
+    } @else {
+      margin: 0 0 5px;
+      padding: 5px 10px;
+      padding-left: 30px;
     }
 
-    .elr-accordion-icon {
-        font-size: to-rems(14px);
-        color: $icon-color;
-        transform: rotate(-90deg);
-        line-height: 1;
-        position: absolute;
-        left: to-rems(15px);
-        top: to-rems(9px);
-        transition: transform .3s ease-in-out;
+    &:hover {
+      cursor: pointer;
     }
 
-    .elr-accordion-content {
-        @include elr-slide;
-        padding: 0;
+    &.active {
+      .elr-accordion-icon {
+        transform: rotate(0deg);
+      }
+    }
+  }
 
-        &.active {
-            margin-bottom: to-rems(5px);
-        }
+  .elr-accordion-icon {
+    font-size: 14px;
+    font-weight: 700;
+    color: $icon-color;
+    transform: rotate(-90deg);
+    line-height: 1;
+    position: absolute;
+    top: 9px;
+    transition: transform 0.3s ease-in-out;
+
+    @if ($border-color == none) {
+      left: 0;
+    } @else {
+      left: 15px;
+    }
+  }
+
+  .elr-accordion-content {
+    @include elr-slide;
+    padding: 0;
+
+    &.active {
+      margin-bottom: 5px;
+
+      @if ($border-color == none) {
+        padding: 10px 0;
+      } @else {
+        padding: 20px;
+      }
     }
 
-    .elr-accordion-inner {
-        padding: to-rems(10px) to-rems(20px);
+    p {
+      margin: 0;
+      padding: 5px 0;
     }
+
+    p:first-child {
+      padding-top: 0;
+    }
+
+    p:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .elr-accordion-inner {
+    padding: 10px 20px;
+  }
 }
