@@ -4,3 +4,5 @@ install:
   - npm install
   - gem install sass
   - gem install scss-lint
+script:
+  - gulp
