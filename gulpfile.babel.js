@@ -12,11 +12,11 @@ var paths = {
   css: 'dist/css/'
 };
 
-gulp.task('scsslint', function() {
+gulp.task('scsslint', () => {
   return gulp.src('src/**/*.scss').pipe(scsslint());
 });
 
-gulp.task('styles', ['scsslint'], function() {
+gulp.task('styles', ['scsslint'], () => {
   return gulp
     .src('style.scss')
     .pipe(plumber())
