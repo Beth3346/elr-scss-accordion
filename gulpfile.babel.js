@@ -9,7 +9,7 @@ import autoprefixer from 'gulp-autoprefixer';
 import babel from 'gulp-babel';
 import cleanCSS from 'gulp-clean-css';
 
-const paths = {
+let paths = {
     app: 'dist/',
     css: 'dist/css/'
 };
