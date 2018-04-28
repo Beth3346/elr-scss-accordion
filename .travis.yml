@@ -1,8 +1,8 @@
 language: node_js
 sudo: false
 before_script:
+  - npm install
   - gem install sass
   - gem install scss-lint
-  - npm install
   - npm install -g gulp
   - gulp
