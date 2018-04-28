@@ -21,14 +21,11 @@
     "gulp-plumber": "^1.2.0",
     "gulp-sass": "^4.0.1",
     "gulp-scss-lint": "^0.6.1",
-    "husky": "^1.0.0-rc.2",
     "node-sass": "^4.9.0",
     "path": "^0.12.7"
   },
   "homepage": "http://www.elizabeth-rogers.com/elr-utilities/css.html",
-  "keywords": [
-    "sass, css, mixins, accordion"
-  ],
+  "keywords": ["sass, css, mixins, accordion"],
   "license": "SEE LICENSE IN LICENSE.md",
   "main": "/src/_main.scss",
   "repository": {
@@ -38,10 +35,5 @@
   "dependencies": {
     "elr-scss-animations": "0.0.1",
     "elr-scss-functions": "0.1.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "gulp"
-    }
   }
 }
