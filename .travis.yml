@@ -1,4 +1,6 @@
 language: node_js
 sudo: false
-before_script:
+install:
   - npm install
+  - gem install sass
+  - gem install scss-lint
