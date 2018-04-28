@@ -4,5 +4,4 @@ before_script:
   - npm install
   - gem install sass
   - gem install scss-lint
-  - npm install -g gulp
   - gulp
