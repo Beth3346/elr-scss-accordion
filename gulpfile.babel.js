@@ -5,6 +5,7 @@ import scsslint from 'gulp-scss-lint';
 import plumber from 'gulp-plumber';
 import autoprefixer from 'gulp-autoprefixer';
 import cleanCSS from 'gulp-clean-css';
+import babel from 'gulp-babel';
 
 var paths = {
   app: 'dist/',

@@ -33,7 +33,8 @@
   "dependencies": {
     "babel-runtime": "^6.26.0",
     "elr-scss-animations": "0.0.1",
-    "elr-scss-functions": "0.1.2"
+    "elr-scss-functions": "0.1.2",
+    "gulp-babel": "^7.0.1"
   },
   "husky": {
     "hooks": {
