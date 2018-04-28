@@ -13,13 +13,14 @@
     "babel-register": "^6.26.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
     "gulp-clean-css": "^3.9.3",
     "gulp-plumber": "^1.2.0",
     "gulp-sass": "^4.0.1",
     "gulp-scss-lint": "^0.6.1",
+    "husky": "^1.0.0-rc.2",
     "node-sass": "^4.5.0",
-    "path": "^0.12.7",
-    "gulp-babel": "^7.0.1"
+    "path": "^0.12.7"
   },
   "homepage": "http://www.elizabeth-rogers.com/elr-utilities/css.html",
   "keywords": [
