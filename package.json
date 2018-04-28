@@ -17,7 +17,7 @@
     "gulp-plumber": "^1.2.0",
     "gulp-sass": "^4.0.1",
     "gulp-scss-lint": "^0.6.1",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.5.0",
     "path": "^0.12.7",
     "gulp-babel": "^7.0.1"
   },
@@ -40,5 +40,8 @@
     "hooks": {
       "pre-commit": "gulp"
     }
+  },
+  "resolutions": {
+    "natives": "1.1.3"
   }
 }
