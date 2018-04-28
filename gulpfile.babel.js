@@ -1,4 +1,3 @@
-import babel from 'babel-register';
 import gulp from 'gulp';
 import path from 'path';
 import sass from 'gulp-sass';
