@@ -8,7 +8,6 @@
     "email": "beth3346@gmail.com"
   },
   "devDependencies": {
-    "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.3",

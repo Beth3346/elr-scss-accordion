@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var del = require('del');
 var path = require('path');
 var sass = require('gulp-sass');
 var scsslint = require('gulp-scss-lint');
@@ -11,10 +10,6 @@ var paths = {
   app: 'dist/',
   css: 'dist/css/'
 };
-
-gulp.task('clean:styles', function() {
-  return del([paths.css]);
-});
 
 gulp.task('scsslint', function() {
   return gulp.src('src/**/*.scss').pipe(scsslint());
