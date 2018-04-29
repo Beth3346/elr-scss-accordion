@@ -1,13 +1,9 @@
-@import 'src/main';
-
 .accordion {
-  @include elr-accordion;
   max-width: 500px;
   margin: 10px auto;
 }
 
 .accordion-no-border {
-  @include elr-accordion($config: (border-color: none));
   max-width: 500px;
   margin: 10px auto;
 }

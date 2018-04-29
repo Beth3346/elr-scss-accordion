@@ -18,7 +18,7 @@ gulp.task('scsslint', () => {
 
 gulp.task('styles', ['scsslint'], () => {
   return gulp
-    .src('style.scss')
+    .src('./*.scss')
     .pipe(plumber())
     .pipe(
       sass({

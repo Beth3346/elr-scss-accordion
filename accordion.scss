@@ -1,0 +1,9 @@
+@import './src/main';
+
+.elr-accordion {
+  @include elr-accordion;
+}
+
+.elr-accordion-no-border {
+  @include elr-accordion($config: (border-color: none));
+}
