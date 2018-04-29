@@ -4,7 +4,7 @@
       label-color: #333,
       border-radius: 3px,
       color: #fff,
-      border-color: #333,
+      border-color: #ccc,
       icon-color: rgb(0, 140, 255)
     ),
     $config
@@ -45,7 +45,7 @@
     } @else {
       margin: 0 0 5px;
       padding: 5px 10px;
-      padding-left: 30px;
+      padding-left: 25px;
     }
 
     &:hover {
@@ -72,7 +72,7 @@
     @if ($border-color == none) {
       left: 0;
     } @else {
-      left: 15px;
+      left: 10px;
     }
   }
 
@@ -82,29 +82,25 @@
 
     &.active {
       margin-bottom: 5px;
-
-      @if ($border-color == none) {
-        padding: 10px 0;
-      } @else {
-        padding: 20px;
-      }
     }
 
     p {
       margin: 0;
-      padding: 5px 0;
+      // padding: 5px 0;
+
+      @if ($border-color == none) {
+        padding: 5px 0;
+      } @else {
+        padding: 5px 20px;
+      }
     }
 
     p:first-child {
-      padding-top: 0;
+      padding-top: 20px;
     }
 
     p:last-child {
-      padding-bottom: 0;
+      padding-bottom: 20px;
     }
-  }
-
-  .elr-accordion-inner {
-    padding: 10px 20px;
   }
 }
