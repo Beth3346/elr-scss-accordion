@@ -9,17 +9,17 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-babel": "^7.0.1",
-    "gulp-clean-css": "^3.9.3",
+    "gulp-clean-css": "^3.9.4",
     "gulp-plumber": "^1.2.0",
     "gulp-sass": "^4.0.1",
     "gulp-scss-lint": "^0.6.1",
     "husky": "^1.0.0-rc.2",
-    "node-sass": "^4.5.0",
+    "node-sass": "^4.9.0",
     "path": "^0.12.7"
   },
   "homepage": "http://www.elizabeth-rogers.com/elr-utilities/css.html",
@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "elr-scss-animations": "0.0.1",
+    "elr-scss-animations": "0.0.2",
     "elr-scss-functions": "0.1.2"
   },
   "husky": {
