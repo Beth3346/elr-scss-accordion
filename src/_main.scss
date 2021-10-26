@@ -1,5 +1,5 @@
-@import 'node_modules/elr-scss-functions/main';
-@import 'node_modules/elr-scss-animations/src/slide-down';
+@import "node_modules/elr-scss-functions/src/main";
+@import "node_modules/elr-scss-animations/src/slide-down";
 
 @mixin elr-accordion($config: ()) {
   $config: extend(
@@ -8,7 +8,7 @@
       border-radius: 3px,
       color: #fff,
       border-color: #ccc,
-      icon-color: rgb(0, 140, 255)
+      icon-color: rgb(0, 140, 255),
     ),
     $config
   );
