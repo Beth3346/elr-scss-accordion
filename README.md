@@ -1,8 +1,6 @@
 # elr-scss-accordion
 
-[![Build Status](https://travis-ci.org/Beth3346/elr-scss-accordion.svg?branch=master)](https://travis-ci.org/Beth3346/elr-scss-accordion)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/dm/elr-scss-accordion.svg?style=flat)](https://npmjs.com/package/elr-scss-accordion) [![Greenkeeper badge](https://badges.greenkeeper.io/Beth3346/elr-scss-accordion.svg)](https://greenkeeper.io/)
 
 a scss mixin for accordions
 
@@ -30,7 +28,7 @@ Its up to you to wire up the JavaScript to provide the accordion functionality. 
 #### Scss
 
 ```scss
-@import '~elr-scss-accordion';
+@import "~elr-scss-accordion";
 
 .elr-accordion {
   @include elr-accordion(
@@ -39,7 +37,7 @@ Its up to you to wire up the JavaScript to provide the accordion functionality. 
       border-radius: 3px,
       color: #333,
       border-color: #333,
-      icon-color: #333
+      icon-color: #333,
     )
   );
 }
