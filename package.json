@@ -10,7 +10,10 @@
   "scripts": {
     "build": "gulp clean && gulp",
     "prepare": "husky install",
-    "test": "gulp clean && gulp"
+    "test": "gulp clean && gulp",
+    "update": "ncu -u",
+    "update:install": "ncu -u && npm install",
+    "publish": "np"
   },
   "devDependencies": {
     "del": "^6.0.0",
@@ -20,7 +23,8 @@
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^5.0.0",
     "husky": "^7.0.4",
-    "path": "^0.12.7",
+    "np": "^7.5.0",
+    "npm-check-updates": "^11.8.5",
     "sass": "^1.43.4"
   },
   "homepage": "https://github.com/Beth3346/elr-scss-accordion",
@@ -34,7 +38,7 @@
     "url": "https://github.com/Beth3346/elr-scss-accordion.git"
   },
   "dependencies": {
-    "elr-scss-animations": "0.0.7",
+    "elr-scss-animations": "0.0.8",
     "elr-scss-functions": "1.1.6"
   },
   "browserslist": [
