@@ -11,7 +11,7 @@
     "build": "gulp clean && gulp",
     "prepare": "husky install",
     "test": "gulp clean && gulp",
-    "update": "ncu -u",
+    "update": "ncu",
     "update:install": "ncu -u && npm install",
     "publish": "np"
   },
