@@ -1,5 +1,5 @@
-@import "node_modules/elr-scss-functions/src/main";
-@import "node_modules/elr-scss-animations/src/slide-down";
+@import "elr-scss-functions/src/main";
+@import "elr-scss-animations/src/main";
 
 @mixin elr-accordion($config: ()) {
   $config: extend(
