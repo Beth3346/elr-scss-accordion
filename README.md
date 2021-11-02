@@ -1,6 +1,7 @@
 # elr-scss-accordion
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![npm](https://img.shields.io/npm/dm/elr-scss-accordion.svg?style=flat)](https://npmjs.com/package/elr-scss-accordion)
 
 a scss mixin for accordions
 
