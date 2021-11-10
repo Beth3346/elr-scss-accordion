@@ -19,8 +19,8 @@
   $border-color: map-get($config, border-color);
   $icon-color: map-get($config, icon-color);
 
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 
   .elr-accordion-label,
   .elr-accordion-content {
@@ -39,26 +39,33 @@
     font-size: 18px;
     color: $label-color;
     font-weight: 700;
-    position: relative;
+    // position: relative;
 
     @if ($border-color == none) {
       margin: 0;
-      padding: 5px 0;
-      padding-left: 15px;
+      padding: 4px 0;
+      // padding-left: 16px;
     } @else {
-      margin: 0 0 5px;
-      padding: 5px 10px;
-      padding-left: 25px;
-    }
-
-    &:hover {
-      cursor: pointer;
+      margin: 0 0 4px;
+      padding: 4px 16px;
     }
 
     &.active {
       .elr-accordion-icon {
         transform: rotate(0deg);
       }
+    }
+
+    button {
+      background: none;
+      cursor: pointer;
+      border: 0;
+      font-size: inherit;
+      font-weight: inherit;
+      // display: block;
+      width: 100%;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -68,14 +75,15 @@
     color: $icon-color;
     transform: rotate(-90deg);
     line-height: 1;
-    position: absolute;
-    top: 9px;
+    // position: absolute;
+    // top: 9px;
+    margin-right: 8px;
     transition: transform 0.3s ease-in-out;
 
     @if ($border-color == none) {
       left: 0;
     } @else {
-      left: 10px;
+      left: 8px;
     }
   }
 
@@ -84,17 +92,17 @@
     padding: 0;
 
     &.active {
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
 
     p {
       margin: 0;
-      // padding: 5px 0;
+      // padding: 4px 0;
 
       @if ($border-color == none) {
-        padding: 5px 0;
+        padding: 4px 0;
       } @else {
-        padding: 5px 20px;
+        padding: 4px 20px;
       }
     }
 

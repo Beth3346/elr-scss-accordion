@@ -100,13 +100,7 @@ blockquote::before,
 blockquote::after,
 q::before,
 q::after {
-  content: '';
-}
-
-// remember to define focus styles!
-:focus {
-  outline: 0;
-  text-decoration: none;
+  content: "";
 }
 
 // remember to highlight inserts somehow!
@@ -137,7 +131,7 @@ img {
 body {
   line-height: 1.5;
   font-size: 1rem;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #333;
   background-color: #fff;
 }
@@ -190,11 +184,6 @@ section {
 }
 
 .accordion {
-  max-width: 500px;
-  margin: 10px auto;
-}
-
-.accordion-no-border {
-  max-width: 500px;
+  max-width: 768px;
   margin: 10px auto;
 }
