@@ -43,6 +43,11 @@
     "elr-scss-functions": "1.1.6",
     "elr-scss-reset": "^0.0.6"
   },
+  "np": {
+    "yarn": false,
+    "contents": "public",
+    "branch": "main"
+  },
   "browserslist": [
     "last 3 versions"
   ]
