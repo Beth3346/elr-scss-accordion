@@ -40,7 +40,8 @@
   },
   "dependencies": {
     "elr-scss-animations": "0.0.10",
-    "elr-scss-functions": "1.1.6"
+    "elr-scss-functions": "1.1.6",
+    "elr-scss-reset": "^0.0.6"
   },
   "browserslist": [
     "last 3 versions"

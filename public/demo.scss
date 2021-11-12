@@ -1,0 +1,51 @@
+@import "./src/main";
+@import "elr-scss-reset/src/main";
+
+@include elr-reset;
+
+.wrapper {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.main-heading {
+  font-size: 36px;
+  font-weight: 900;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.subheading {
+  font-size: 16px;
+  color: #666;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.demo-content {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.accordion {
+  max-width: 768px;
+  margin: 10px auto;
+}
+
+.elr-accordion {
+  @include elr-accordion;
+}
+
+.elr-accordion-no-border {
+  @include elr-accordion(
+    $config: (
+      border-color: none,
+    )
+  );
+}

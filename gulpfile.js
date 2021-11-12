@@ -4,8 +4,7 @@ const plumber = require("gulp-plumber");
 const autoprefixer = require("gulp-autoprefixer");
 const cleanCSS = require("gulp-clean-css");
 const del = require("del");
-var uglify = require("gulp-uglify");
-// var pipeline = require("readable-stream").pipeline;
+const uglify = require("gulp-uglify");
 
 var paths = {
   app: "dist/",

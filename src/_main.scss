@@ -44,11 +44,11 @@
 
     @if ($border-color == none) {
       margin: 0;
-      padding: 4px 0;
+      padding: 8px 0;
       // padding-left: 16px;
     } @else {
       margin: 0 0 4px;
-      padding: 4px 8px;
+      padding: 8px 12px;
     }
 
     &.active {
@@ -57,7 +57,7 @@
       }
     }
 
-    h2 {
+    .elr-accordion-heading {
       font-size: 18px;
       color: $label-color;
       font-weight: 700;
