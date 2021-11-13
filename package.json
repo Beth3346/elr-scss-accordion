@@ -45,7 +45,6 @@
   },
   "np": {
     "yarn": false,
-    "contents": "[dist,public]",
     "branch": "main"
   },
   "browserslist": [
