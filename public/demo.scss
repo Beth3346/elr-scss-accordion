@@ -3,6 +3,10 @@
 
 @include elr-reset;
 
+* {
+  font-family: Roboto;
+}
+
 hr {
   display: block;
   height: 1px;
