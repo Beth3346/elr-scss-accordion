@@ -1,14 +1,15 @@
 @import "elr-scss-functions/src/main";
+@import "elr-scss-config/src/main";
 @import "elr-scss-animations/src/main";
 
 @mixin elr-accordion($config: ()) {
   $config: extend(
     (
-      label-color: #333,
-      border-radius: 5px,
-      color: #fff,
-      border-color: #ccc,
-      icon-color: rgb(0, 140, 255),
+      label-color: $text-color,
+      border-radius: $border-radius,
+      color: $white,
+      border-color: $light-gray,
+      icon-color: $primary-color,
       spacing: 8px,
     ),
     $config
