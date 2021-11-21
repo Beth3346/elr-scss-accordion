@@ -8,7 +8,6 @@
     "email": "beth3346@gmail.com"
   },
   "sass": {
-    "main": "./src/_main.scss",
     "includePaths": [
       "./node_modules"
     ]
@@ -48,7 +47,8 @@
   "np": {
     "yarn": false,
     "branch": "main",
-    "tests": false
+    "tests": false,
+    "contents": "src"
   },
   "browserslist": [
     "last 3 versions"

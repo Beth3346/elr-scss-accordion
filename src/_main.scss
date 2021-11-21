@@ -21,6 +21,7 @@
   $border-color: map-get($config, border-color);
   $icon-color: map-get($config, icon-color);
   $spacing: map-get($config, spacing);
+  $border: 1px solid $border-color;
 
   // margin-top: 8px;
   // margin-bottom: 8px;
@@ -30,7 +31,7 @@
     background-color: $color;
 
     @if ($border-color != none) {
-      border: 1px solid $border-color;
+      border: $border;
 
       @if ($spacing == 0) {
         border-bottom: 0;
@@ -69,7 +70,7 @@
 
       &:last-of-type:not(.active) {
         border-radius: 0 0 $border-radius $border-radius;
-        border-bottom: 1px solid $border-color;
+        border-bottom: $border;
       }
     }
 
@@ -81,6 +82,7 @@
 
     .accordion-heading {
       font-size: 18px;
+      padding: 0;
       color: $label-color;
       font-weight: 700;
       display: flex;
@@ -106,22 +108,35 @@
 
   .accordion-content {
     @include elr-slide;
-    padding: 0;
     line-height: 1.5;
 
     &.active {
       margin-bottom: $spacing;
+      padding: 0;
+
+      > div {
+        padding: 16px 24px 24px;
+      }
 
       @if ($border-color != none and $spacing == 0) {
         &:last-child {
-          border-bottom: 1px solid $border-color;
+          border-bottom: $border;
           border-radius: 0 0 $border-radius $border-radius;
         }
       }
     }
 
+    h3 {
+      border-bottom: $border;
+      padding-top: 0;
+      margin-top: 0;
+      padding-bottom: 4px;
+      margin-bottom: 16px;
+    }
+
     p {
       margin: 0;
+      padding: 0 16px;
       // padding: 4px 0;
 
       @if ($border-color == none) {
@@ -138,7 +153,8 @@
         }
 
         &:last-child {
-          padding-bottom: 20px;
+          margin-bottom: 0;
+          padding-bottom: 0;
         }
       }
     }
