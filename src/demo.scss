@@ -52,11 +52,11 @@ hr {
   margin: 10px auto;
 }
 
-.elr-accordion {
+.accordion {
   @include elr-accordion;
 }
 
-.elr-accordion-no-spacing {
+.accordion-no-spacing {
   @include elr-accordion(
     $config: (
       spacing: 0,
@@ -64,7 +64,7 @@ hr {
   );
 }
 
-.elr-accordion-no-border {
+.accordion-no-border {
   @include elr-accordion(
     $config: (
       border-color: none,

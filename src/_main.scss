@@ -25,8 +25,8 @@
   // margin-top: 8px;
   // margin-bottom: 8px;
 
-  .elr-accordion-label,
-  .elr-accordion-content {
+  .accordion-label,
+  .accordion-content {
     background-color: $color;
 
     @if ($border-color != none) {
@@ -46,7 +46,7 @@
     }
   }
 
-  .elr-accordion-label {
+  .accordion-label {
     background: none;
     cursor: pointer;
     width: 100%;
@@ -74,12 +74,12 @@
     }
 
     &.active {
-      .elr-accordion-icon {
+      .accordion-icon {
         transform: rotate(0deg);
       }
     }
 
-    .elr-accordion-heading {
+    .accordion-heading {
       font-size: 18px;
       color: $label-color;
       font-weight: 700;
@@ -88,7 +88,7 @@
     }
   }
 
-  .elr-accordion-icon {
+  .accordion-icon {
     font-size: 14px;
     font-weight: 700;
     color: $icon-color;
@@ -104,7 +104,7 @@
     }
   }
 
-  .elr-accordion-content {
+  .accordion-content {
     @include elr-slide;
     padding: 0;
     line-height: 1.5;

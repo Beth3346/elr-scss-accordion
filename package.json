@@ -1,13 +1,14 @@
 {
   "name": "elr-scss-accordion",
   "description": "a scss mixin for accordions",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "author": "Elizabeth Rogers",
   "bugs": {
     "url": "https://github.com/Beth3346/elr-scss-accordion",
     "email": "beth3346@gmail.com"
   },
   "sass": {
+    "main": "./src/_main.scss",
     "includePaths": [
       "./node_modules"
     ]
@@ -27,7 +28,13 @@
     "np": "^7.6.0",
     "npm-check-updates": "^12.0.2",
     "parcel": "^2.0.1",
-    "sass": "^1.43.4"
+    "sass": "^1.43.4",
+    "elr-scss-reset": "^0.0.7"
+  },
+  "dependencies": {
+    "elr-scss-animations": "0.0.12",
+    "elr-scss-config": "^1.1.2",
+    "elr-scss-functions": "1.1.6"
   },
   "homepage": "https://github.com/Beth3346/elr-scss-accordion",
   "keywords": [
@@ -38,17 +45,10 @@
     "type": "git",
     "url": "https://github.com/Beth3346/elr-scss-accordion.git"
   },
-  "dependencies": {
-    "elr-scss-animations": "0.0.12",
-    "elr-scss-config": "^1.1.2",
-    "elr-scss-functions": "1.1.6",
-    "elr-scss-reset": "^0.0.7"
-  },
   "np": {
     "yarn": false,
     "branch": "main",
-    "tests": false,
-    "contents": "dist"
+    "tests": false
   },
   "browserslist": [
     "last 3 versions"
