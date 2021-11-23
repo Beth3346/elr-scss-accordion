@@ -1,11 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"></html><![endif]-->
-<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"></html><![endif]-->
-<!--[if IE 8]> <html class="no-js lt-ie9"></html><![endif]-->
-<!-- [if gt IE 8]><! -->
 <html lang="en-US">
-  <!-- <![endif] -->
-
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,65 +17,68 @@
   </head>
 
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
     <div class="wrapper">
       <div class="content-holder">
+        <h1 class="main-heading">Accordion Demo</h1>
+        <p class="subheading">
+          This package has styles only. It's up to you to wire up the JavaScript.
+        </p>
         <div class="demo-content">
-          <h1 class="main-heading">Accordion Demo</h1>
-          <p class="subheading">
-            This package has styles only. It's up to you to wire up the JavaScript.
-          </p>
+          <h2 class="subheading">Default Accordion Styles</h2>
           <div class="accordion">
             <button class="accordion-label active" data-contentid="content-1">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 1</span></button></h2>
             </button>
             <div id="content-1" class="accordion-content active">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                nobis ab illum a maiores animi laboriosam corrupti eos
-                necessitatibus tempore?
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                adipisci, dolore libero rerum natus numquam.
-              </p>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  nobis ab illum a maiores animi laboriosam corrupti eos
+                  necessitatibus tempore?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  adipisci, dolore libero rerum natus numquam.
+                </p>
+              </div>
             </div>
             <button data-contentid="content-2" class="accordion-label">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 2</span></h2>
             </button>
             <div id="content-2" class="accordion-content">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Pariatur eos animi illum voluptas obcaecati commodi nobis et,
-                nam vero soluta explicabo recusandae unde provident perferendis.
-                Neque optio odio numquam commodi.
-              </p>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Pariatur eos animi illum voluptas obcaecati commodi nobis et,
+                  nam vero soluta explicabo recusandae unde provident perferendis.
+                  Neque optio odio numquam commodi.
+                </p>
+              </div>
             </div>
             <button class="accordion-label" data-contentid="content-3">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 3</span></h2>
             </button>
             <div id="content-3" class="accordion-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                perferendis quo, minima accusantium, nihil, eius distinctio ea
-                rem consequatur optio culpa quod harum? Dolores, perspiciatis.
-              </p>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                  perferendis quo, minima accusantium, nihil, eius distinctio ea
+                  rem consequatur optio culpa quod harum? Dolores, perspiciatis.
+                </p>
+              </div>
             </div>
             <button class="accordion-label" data-contentid="content-4">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 4</span></h2>
             </button>
             <div id="content-4" class="accordion-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae enim inventore minus sunt distinctio vitae obcaecati
-                sequi, unde in placeat nam officiis explicabo cum quas
-                dignissimos optio.
-              </p>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestiae enim inventore minus sunt distinctio vitae obcaecati
+                  sequi, unde in placeat nam officiis explicabo cum quas
+                  dignissimos optio.
+                </p>
+              </div>
             </div>
           </div>
           <hr>
@@ -90,47 +87,55 @@
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 1</span></button></h2>
             </button>
             <div id="accordion3-content-1" class="accordion-content active">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                nobis ab illum a maiores animi laboriosam corrupti eos
-                necessitatibus tempore?
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                adipisci, dolore libero rerum natus numquam.
-              </p>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  nobis ab illum a maiores animi laboriosam corrupti eos
+                  necessitatibus tempore?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  adipisci, dolore libero rerum natus numquam.
+                </p>
+              </div>
             </div>
             <button data-contentid="accordion3-content-2" class="accordion-label">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 2</span></h2>
             </button>
             <div id="accordion3-content-2" class="accordion-content">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Pariatur eos animi illum voluptas obcaecati commodi nobis et,
-                nam vero soluta explicabo recusandae unde provident perferendis.
-                Neque optio odio numquam commodi.
-              </p>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Pariatur eos animi illum voluptas obcaecati commodi nobis et,
+                  nam vero soluta explicabo recusandae unde provident perferendis.
+                  Neque optio odio numquam commodi.
+                </p>
+              </div>
             </div>
             <button class="accordion-label" data-contentid="accordion3-content-3">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 3</span></h2>
             </button>
             <div id="accordion3-content-3" class="accordion-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                perferendis quo, minima accusantium, nihil, eius distinctio ea
-                rem consequatur optio culpa quod harum? Dolores, perspiciatis.
-              </p>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                  perferendis quo, minima accusantium, nihil, eius distinctio ea
+                  rem consequatur optio culpa quod harum? Dolores, perspiciatis.
+                </p>
+              </div>
             </div>
             <button class="accordion-label" data-contentid="accordion3-content-4">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 4</span></h2>
             </button>
             <div id="accordion3-content-4" class="accordion-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae enim inventore minus sunt distinctio vitae obcaecati
-                sequi, unde in placeat nam officiis explicabo cum quas
-                dignissimos optio.
-              </p>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestiae enim inventore minus sunt distinctio vitae obcaecati
+                  sequi, unde in placeat nam officiis explicabo cum quas
+                  dignissimos optio.
+                </p>
+              </div>
             </div>
           </div>
           <hr>
@@ -139,47 +144,55 @@
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 1</span></button></h2>
             </button>
             <div id="accordion2-content-1" class="accordion-content active">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                nobis ab illum a maiores animi laboriosam corrupti eos
-                necessitatibus tempore?
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                adipisci, dolore libero rerum natus numquam.
-              </p>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  nobis ab illum a maiores animi laboriosam corrupti eos
+                  necessitatibus tempore?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  adipisci, dolore libero rerum natus numquam.
+                </p>
+              </div>
             </div>
             <button data-contentid="accordion2-content-2" class="accordion-label">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 2</span></h2>
             </button>
             <div id="accordion2-content-2" class="accordion-content">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Pariatur eos animi illum voluptas obcaecati commodi nobis et,
-                nam vero soluta explicabo recusandae unde provident perferendis.
-                Neque optio odio numquam commodi.
-              </p>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Pariatur eos animi illum voluptas obcaecati commodi nobis et,
+                  nam vero soluta explicabo recusandae unde provident perferendis.
+                  Neque optio odio numquam commodi.
+                </p>
+              </div>
             </div>
             <button class="accordion-label" data-contentid="accordion2-content-3">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 3</span></h2>
             </button>
             <div id="accordion2-content-3" class="accordion-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                perferendis quo, minima accusantium, nihil, eius distinctio ea
-                rem consequatur optio culpa quod harum? Dolores, perspiciatis.
-              </p>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                  perferendis quo, minima accusantium, nihil, eius distinctio ea
+                  rem consequatur optio culpa quod harum? Dolores, perspiciatis.
+                </p>
+              </div>
             </div>
             <button class="accordion-label" data-contentid="accordion2-content-4">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 4</span></h2>
             </button>
             <div id="accordion2-content-4" class="accordion-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae enim inventore minus sunt distinctio vitae obcaecati
-                sequi, unde in placeat nam officiis explicabo cum quas
-                dignissimos optio.
-              </p>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestiae enim inventore minus sunt distinctio vitae obcaecati
+                  sequi, unde in placeat nam officiis explicabo cum quas
+                  dignissimos optio.
+                </p>
+              </div>
             </div>
           </div>
         </div>

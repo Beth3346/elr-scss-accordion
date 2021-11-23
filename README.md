@@ -5,6 +5,20 @@
 
 a scss mixin for accordions
 
+## Screenshots
+
+### Default Accordion
+
+![screenshot of default accordion](./src/screenshot1.png)
+
+### Accordion with no spacing
+
+![screenshot of accordion with no spacing](./src/screenshot2.png)
+
+### Accordion with no border
+
+![screenshot of accordion with no border](./src/screenshot3.png)
+
 ## Installation
 
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
@@ -47,54 +61,61 @@ Its up to you to wire up the JavaScript to provide the accordion functionality. 
 #### HTML
 
 ```html
-<div class="accordion elr-accordion">
-  <h2 class="elr-accordion-label active">
-    <button data-contentid="content-1" class="button-accordion-label"><i class="elr-accordion-icon fa fa-angle-down"></i><span>Label 1</span></button>
-  </h2>
-  <div id="content-1" class="elr-accordion-content active">
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-      nobis ab illum a maiores animi laboriosam corrupti eos
-      necessitatibus tempore?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-      adipisci, dolore libero rerum natus numquam.
-    </p>
+<div class="accordion">
+  <button class="accordion-label active" data-contentid="content-1">
+    <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 1</span></button></h2>
+  </button>
+  <div id="content-1" class="accordion-content active">
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+        nobis ab illum a maiores animi laboriosam corrupti eos
+        necessitatibus tempore?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+        adipisci, dolore libero rerum natus numquam.
+      </p>
+    </div>
   </div>
-  <h2 class="elr-accordion-label">
-    <button data-contentid="content-2" class="button-accordion-label"><i class="elr-accordion-icon fa fa-angle-down"></i><span>Label 2</span></button>
-  </h2>
-  <div id="content-2" class="elr-accordion-content">
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-      Pariatur eos animi illum voluptas obcaecati commodi nobis et,
-      nam vero soluta explicabo recusandae unde provident perferendis.
-      Neque optio odio numquam commodi.
-    </p>
+  <button data-contentid="content-2" class="accordion-label">
+    <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 2</span></h2>
+  </button>
+  <div id="content-2" class="accordion-content">
+    <div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Pariatur eos animi illum voluptas obcaecati commodi nobis et,
+        nam vero soluta explicabo recusandae unde provident perferendis.
+        Neque optio odio numquam commodi.
+      </p>
+    </div>
   </div>
-  <h2 class="elr-accordion-label">
-    <button data-contentid="content-3" class="button-accordion-label"><i class="elr-accordion-icon fa fa-angle-down"></i><span>Label 3</span></button>
-  </h2>
-  <div id="content-3" class="elr-accordion-content">
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-      perferendis quo, minima accusantium, nihil, eius distinctio ea
-      rem consequatur optio culpa quod harum? Dolores, perspiciatis.
-    </p>
+  <button class="accordion-label" data-contentid="content-3">
+    <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 3</span></h2>
+  </button>
+  <div id="content-3" class="accordion-content">
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        perferendis quo, minima accusantium, nihil, eius distinctio ea
+        rem consequatur optio culpa quod harum? Dolores, perspiciatis.
+      </p>
+    </div>
   </div>
-  <h2 class="elr-accordion-label">
-    <button data-contentid="content-4" class="button-accordion-label"><i class="elr-accordion-icon fa fa-angle-down"></i><span>Label 4</span></button>
-  </h2>
-  <div id="content-4" class="elr-accordion-content">
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Molestiae enim inventore minus sunt distinctio vitae obcaecati
-      sequi, unde in placeat nam officiis explicabo cum quas
-      dignissimos optio.
-    </p>
+  <button class="accordion-label" data-contentid="content-4">
+    <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 4</span></h2>
+  </button>
+  <div id="content-4" class="accordion-content">
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Molestiae enim inventore minus sunt distinctio vitae obcaecati
+        sequi, unde in placeat nam officiis explicabo cum quas
+        dignissimos optio.
+      </p>
+    </div>
   </div>
-</div>
 </div>
 ```
 

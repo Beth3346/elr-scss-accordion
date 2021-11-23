@@ -1,5 +1,6 @@
 @import "./src/main";
 @import "elr-scss-reset/src/main";
+@import "elr-scss-config/src/main";
 
 @include elr-reset;
 
@@ -11,7 +12,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: $border;
   margin: 1em 0;
   padding: 0;
   width: 100%;
@@ -26,7 +27,7 @@ hr {
 .main-heading {
   font-size: 36px;
   font-weight: 900;
-  border-bottom: 1px solid #ccc;
+  border-bottom: $border;
   padding-bottom: 5px;
   margin-bottom: 10px;
   width: 100%;
@@ -34,7 +35,7 @@ hr {
 
 .subheading {
   font-size: 16px;
-  color: #666;
+  color: $primary-color;
   padding-bottom: 5px;
   margin-bottom: 10px;
   width: 100%;
