@@ -19,6 +19,7 @@
 /test
 /Gruntfile.js
 /gulpfile.js
-/.github
 /.husky
+/.github
 /.parcel-cache
+/.netlify
