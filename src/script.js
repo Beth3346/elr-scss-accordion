@@ -5,19 +5,22 @@
     const buttons = Array.from(accordion.getElementsByTagName("button"));
 
     buttons.forEach(button =>
-      button.addEventListener("click", e => {
+      button.addEventListener("click", () => {
         const contentId = button.attributes["data-contentid"].nodeValue;
         const content = document.getElementById(contentId);
-        // const label = button.parentNode;
+        const expanded = button.attributes["aria-expanded"].nodeValue;
 
         if (content) {
-          // console.log('classes', content.classList);
           content.classList.toggle("active");
         }
 
-        // if (label) {
         button.classList.toggle("active");
-        // }
+
+        if (expanded === "false") {
+          button.attributes["aria-expanded"].nodeValue = "true";
+        } else {
+          button.attributes["aria-expanded"].nodeValue = "false";
+        }
       })
     );
   });

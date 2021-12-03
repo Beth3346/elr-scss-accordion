@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <div class="wrapper">
+    <main class="wrapper">
       <div class="content-holder">
         <h1 class="main-heading">Accordion Demo</h1>
         <p>
@@ -26,7 +26,7 @@
         <div class="demo-content">
           <h2 class="subheading">Default Accordion Styles</h2>
           <div class="accordion">
-            <button class="accordion-label active" data-contentid="content-1">
+            <button class="accordion-label active" aria-expanded="true" aria-controls="content-1" data-contentid="content-1">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 1</span></button></h2>
             </button>
             <div id="content-1" class="accordion-content active">
@@ -42,7 +42,7 @@
                 </p>
               </div>
             </div>
-            <button data-contentid="content-2" class="accordion-label">
+            <button class="accordion-label" data-contentid="content-2" aria-expanded="false" aria-controls="content-2">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 2</span></h2>
             </button>
             <div id="content-2" class="accordion-content">
@@ -55,7 +55,7 @@
                 </p>
               </div>
             </div>
-            <button class="accordion-label" data-contentid="content-3">
+            <button class="accordion-label" data-contentid="content-3" aria-expanded="false" aria-controls="content-3">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 3</span></h2>
             </button>
             <div id="content-3" class="accordion-content">
@@ -67,7 +67,7 @@
                 </p>
               </div>
             </div>
-            <button class="accordion-label" data-contentid="content-4">
+            <button class="accordion-label" data-contentid="content-4" aria-expanded="false" aria-controls="content-4">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 4</span></h2>
             </button>
             <div id="content-4" class="accordion-content">
@@ -83,7 +83,7 @@
           </div>
           <hr>
           <div class="accordion accordion-no-spacing">
-            <button class="accordion-label active" data-contentid="accordion3-content-1">
+            <button class="accordion-label active" data-contentid="accordion3-content-1" aria-expanded="true" aria-controls="accordion3-content-1">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 1</span></button></h2>
             </button>
             <div id="accordion3-content-1" class="accordion-content active">
@@ -99,7 +99,7 @@
                 </p>
               </div>
             </div>
-            <button data-contentid="accordion3-content-2" class="accordion-label">
+            <button class="accordion-label" data-contentid="accordion3-content-2" aria-expanded="false" aria-controls="accordion3-content-2">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 2</span></h2>
             </button>
             <div id="accordion3-content-2" class="accordion-content">
@@ -112,7 +112,7 @@
                 </p>
               </div>
             </div>
-            <button class="accordion-label" data-contentid="accordion3-content-3">
+            <button class="accordion-label" data-contentid="accordion3-content-3" aria-expanded="false" aria-controls="accordion3-content-3">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 3</span></h2>
             </button>
             <div id="accordion3-content-3" class="accordion-content">
@@ -124,7 +124,7 @@
                 </p>
               </div>
             </div>
-            <button class="accordion-label" data-contentid="accordion3-content-4">
+            <button class="accordion-label" data-contentid="accordion3-content-4" aria-expanded="false" aria-controls="accordion3-content-4">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 4</span></h2>
             </button>
             <div id="accordion3-content-4" class="accordion-content">
@@ -140,7 +140,7 @@
           </div>
           <hr>
           <div class="accordion accordion-no-border">
-            <button class="accordion-label active" data-contentid="accordion2-content-1">
+            <button class="accordion-label active" data-contentid="accordion2-content-1" aria-expanded="false" aria-controls="accordion2-content-1">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 1</span></button></h2>
             </button>
             <div id="accordion2-content-1" class="accordion-content active">
@@ -156,7 +156,7 @@
                 </p>
               </div>
             </div>
-            <button data-contentid="accordion2-content-2" class="accordion-label">
+            <button class="accordion-label" data-contentid="accordion2-content-2" aria-expanded="false" aria-controls="accordion2-content-2">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 2</span></h2>
             </button>
             <div id="accordion2-content-2" class="accordion-content">
@@ -169,7 +169,7 @@
                 </p>
               </div>
             </div>
-            <button class="accordion-label" data-contentid="accordion2-content-3">
+            <button class="accordion-label" data-contentid="accordion2-content-3" aria-expanded="false" aria-controls="accordion2-content-3">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 3</span></h2>
             </button>
             <div id="accordion2-content-3" class="accordion-content">
@@ -181,7 +181,7 @@
                 </p>
               </div>
             </div>
-            <button class="accordion-label" data-contentid="accordion2-content-4">
+            <button class="accordion-label" data-contentid="accordion2-content-4" aria-expanded="false" aria-controls="accordion2-content-4">
               <h2 class="accordion-heading"><i class="accordion-icon fa fa-angle-down"></i><span>Label 4</span></h2>
             </button>
             <div id="accordion2-content-4" class="accordion-content">
@@ -197,7 +197,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
