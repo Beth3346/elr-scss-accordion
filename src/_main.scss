@@ -77,12 +77,15 @@
     }
 
     .accordion-heading {
-      font-size: 18px;
       padding: 0;
-      color: $label-color;
       font-weight: 700;
       display: flex;
       align-items: center;
+
+      button {
+        color: $label-color;
+        font-size: 18px;
+      }
     }
   }
 
