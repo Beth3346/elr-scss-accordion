@@ -1,5 +1,7 @@
-# elr-scss-accordion
+# Accordion
 
+[![npm version](http://img.shields.io/npm/v/elr-scss-accordion.svg)](https://www.npmjs.org/package/elr-scss-accordion)
+[![Build Status](https://github.com/elr-scss-accordion/workflows/CI/badge.svg)](https://github.com/elr-scss-accordion/actions?workflow=CI)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm](https://img.shields.io/npm/dm/elr-scss-accordion.svg?style=flat)](https://npmjs.com/package/elr-scss-accordion)
 
@@ -25,14 +27,19 @@ Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't 
 
 ```sh
 npm install elr-scss-accordion --save
+```
+
+or
+
+```sh
 yarn add elr-scss-accordion
 ```
 
-### Installation
+## Implementation
 
 Its up to you to wire up the JavaScript to provide the accordion functionality. This way you can use any framework, library or even vanilla JavaScript.
 
-#### Arguments
+### Arguments
 
 - label-color
 - border-radius
@@ -40,10 +47,10 @@ Its up to you to wire up the JavaScript to provide the accordion functionality. 
 - border-color
 - icon-color
 
-#### Scss
+### Scss
 
 ```scss
-@import "~elr-scss-accordion";
+@import "elr-scss-accordion/src/main";
 
 .elr-accordion {
   @include elr-accordion(
@@ -58,7 +65,7 @@ Its up to you to wire up the JavaScript to provide the accordion functionality. 
 }
 ```
 
-#### HTML
+### HTML
 
 ```html
 <div class="accordion">
