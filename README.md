@@ -8,6 +8,8 @@
 
 a scss mixin for accordions
 
+[View Demo](https://elr-accordion.netlify.app/)
+
 ## Screenshots
 
 ### Default Accordion
