@@ -4,6 +4,7 @@
 [![CI](https://github.com/Beth3346/elr-scss-accordion/actions/workflows/node.js.yml/badge.svg)](https://github.com/Beth3346/elr-scss-accordion/actions/workflows/node.js.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm](https://img.shields.io/npm/dm/elr-scss-accordion.svg?style=flat)](https://npmjs.com/package/elr-scss-accordion)
+[![last commit](https://img.shields.io/github/last-commit/Beth3346/elr-scss-accordion.svg)](https://github.com/Beth3346/elr-scss-accordion)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7e8ed1ba-5b20-4679-aa49-05f326a620c6/deploy-status)](https://app.netlify.com/sites/elr-accordion/deploys)
 
 a scss mixin for accordions
